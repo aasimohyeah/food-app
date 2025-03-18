@@ -32,6 +32,10 @@ const userSchema = new mongoose.Schema(
     profile: {
       type: String,
     },
+    answer: {
+      type: String,
+      required: [true, "Answer is required"],
+    },
   },
   { timestamps: true } //give timestamp of when user is created,updated etc
 );
